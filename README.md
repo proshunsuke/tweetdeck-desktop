@@ -19,10 +19,10 @@ To add a shortcut to the app, create a file in `~/.local/share/applications` cal
 ```
 [Desktop Entry]
 Name=tweetdeck
-Exec=/full/path/to/folder/tweetdeck
+Exec=/full/path/to/folder/Tweetdeck/Tweetdeck
 Terminal=false
 Type=Application
-Icon=/full/path/to/folder/tweetdeck/resources/app/static/Icon.png
+Icon=/full/path/to/folder/Tweetdeck/resources/app/static/Icon.png
 ```
 
 ### Windows

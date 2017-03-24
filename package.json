@@ -2,7 +2,7 @@
   "name": "tweetdeck-desktop",
   "productName": "Tweetdeck",
   "desktopName": "Tweetdeck",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Unofficial Tweetdeck desktop app",
   "license": "MIT",
   "repository": "mikebell/tweetdeck-desktop",
