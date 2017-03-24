@@ -1,15 +1,15 @@
 {
-  "name": "trello-desktop",
-  "productName": "Trello",
-  "desktopName": "Trello",
+  "name": "tweetdeck-desktop",
+  "productName": "Tweetdeck",
+  "desktopName": "Tweetdeck",
   "version": "0.1.1",
-  "description": "Unofficial Trello desktop app",
+  "description": "Unofficial Tweetdeck desktop app",
   "license": "MIT",
-  "repository": "danielchatfield/trello-desktop",
+  "repository": "mikebell/tweetdeck-desktop",
   "author": {
-    "name": "Daniel Chatfield",
-    "email": "chatfielddaniel@gmail.com",
-    "url": "http://www.danielchatfield.com"
+    "name": "Mike Bell",
+    "email": "hello@mikebell.io",
+    "url": "http://mikebell.io"
   },
   "engines": {
     "node": ">=4"
