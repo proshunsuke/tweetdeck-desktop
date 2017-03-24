@@ -2,13 +2,9 @@
 
 > Unofficial tweetdeck Desktop app
 
-*OS X 10.8+, Windows 7+ & Linux are supported.*
+*Linux are supported.*
 
 ## Install
-
-### OS X
-
-[**Download**](https://github.com/mikebell/tweetdeck-desktop/releases/latest), unzip, and move `tweetdeck.app` to the `/Applications` directory.
 
 ### Linux
 
@@ -25,11 +21,6 @@ Type=Application
 Icon=/full/path/to/folder/Tweetdeck/resources/app/static/Icon.png
 ```
 
-### Windows
-
-[**Download**](https://github.com/mikebell/tweetdeck-desktop/releases/latest) and unzip to some location.
-
-
 ## Dev
 
 Built with [Electron](http://electron.atom.io).
@@ -38,10 +29,8 @@ Built with [Electron](http://electron.atom.io).
 
 - Init: `$ npm install`
 - Run: `$ npm start`
-- Build OS X: `$ npm run build:macos`
 - Build Linux: `$ npm run build:linux`
 - Build Windows: `$ npm run build:windows`
-- Build all: `$ brew install wine` and `$ npm run build` *(OS X only)*
 
 ## License
 
