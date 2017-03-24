@@ -45,4 +45,6 @@ Built with [Electron](http://electron.atom.io).
 
 ## License
 
+Icon from https://www.iconfinder.com/icons/173887/tweetdeck_icon CC BY-NC-ND 3.0
+
 MIT © [Mike Bell](http://mikebell.io)
