@@ -38,7 +38,8 @@
     "electron-config": "^0.1.1",
     "electron-context-menu": "^0.1.0",
     "electron-debug": "^1.0.0",
-    "electron-dl": "^1.0.0"
+    "electron-dl": "^1.0.0",
+    "electron-window-state": "^4.1.0"
   },
   "devDependencies": {
     "electron-packager": "^8.0.0",

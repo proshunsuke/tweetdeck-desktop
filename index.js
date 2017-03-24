@@ -5,6 +5,7 @@ const electron = require('electron');
 const config = require('./config');
 
 const app = electron.app;
+const windowStateKeeper = require('electron-window-state');
 
 require('electron-debug')();
 require('electron-dl')();
@@ -12,16 +13,20 @@ require('electron-context-menu')();
 
 let mainWindow;
 let isQuitting = false;
+let win;
 
 function createMainWindow() {
-  const lastWindowState = config.get('lastWindowState');
+  let mainWindowState = windowStateKeeper({
+    defaultWidth: 1000,
+    defaultHeight: 800
+  });
   const win = new electron.BrowserWindow({
     title: app.getName(),
     show: false,
-    x: lastWindowState.x,
-    y: lastWindowState.y,
-    width: lastWindowState.width,
-    height: lastWindowState.height,
+    x: mainWindowState.x,
+    y: mainWindowState.y,
+    width: mainWindowState.width,
+    height: mainWindowState.height,
     icon: process.platform === 'linux' && path.join(__dirname, 'static', 'Icon.png'),
     minWidth: 400,
     minHeight: 200,
@@ -50,6 +55,8 @@ function createMainWindow() {
       }
     }
   });
+
+  mainWindowState.manage(win);
 
   return win;
 }
@@ -119,8 +126,4 @@ app.on('activate', () => {
 
 app.on('before-quit', () => {
   isQuitting = true;
-
-  if (!mainWindow.isFullScreen()) {
-    config.set('lastWindowState', mainWindow.getBounds());
-  }
 });
