@@ -1,8 +1,8 @@
 # Tweetdeck Desktop
 
-> Unofficial tweetdeck Desktop app
+> Unofficial tweetdeck Desktop app for Linux, Windows and OSX.
 
-*Linux are supported.*
+Tested on Linux but there's no reason it shouldn't compile and run on Windows and OSX.
 
 ## Install
 
