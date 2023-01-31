@@ -70,9 +70,9 @@ app.on('ready', () => {
     mainWindow.show();
   });
 
-  page.on('new-window', (e, url) => {
-    e.preventDefault();
+  page.setWindowOpenHandler(({url}) => {
     electron.shell.openExternal(url);
+    return { action: 'deny' }
   });
 
   mainWindow.webContents.session.on('will-download', (event, item) => {
